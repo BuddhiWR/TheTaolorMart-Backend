@@ -23,8 +23,8 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|string|max:255',
-            'total_amount' => 'required|numeric',
+            'Name' => 'required|string|max:255',
+            'Description' => 'required|string',
         ]);
 
         $order = Order::create($request->all());

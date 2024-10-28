@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+           
+            $table->unsignedBigInteger('ID')->autoIncrement(); // Defining CityKey as an unsignedBigInteger with auto-increment
+            $table->string('Name');
+            $table->text('Description')->nullable(); // Description can be nullable
+            $table->timestamps(); // Adds created_at and updated_at columns
+       
         });
     }
 

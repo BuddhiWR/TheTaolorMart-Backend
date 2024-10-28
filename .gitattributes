@@ -6,6 +6,12 @@
 *.md diff=markdown
 *.php diff=php
 
+# Enforce LF for specific file types
+*.php text eol=lf
+*.scss text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore

@@ -26,3 +26,5 @@ Route::post('/tailors', [TailorController::class, 'store']);       // Create a n
 Route::get('/tailors/{id}', [TailorController::class, 'show']);    // Get a specific tailor by ID
 Route::put('/tailors/{id}', [TailorController::class, 'update']);  // Update a tailor by ID
 Route::delete('/tailors/{id}', [TailorController::class, 'destroy']); // Delete a tailor by ID
+
+

@@ -1,0 +1,1 @@
+<li><a href="{{ route('privacy') }}" class="text-dark">Privacy Policy</a></li>
