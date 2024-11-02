@@ -1,0 +1,81 @@
+/* General Layout */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar .navbar-brand img {
+    height: 40px;
+}
+
+.navbar-brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.navbar-brand h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Sidebar */
+aside {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-dark .nav-link {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar-dark .nav-link:hover {
+    background-color: #1a1a1a;
+    color: #f8f9fa;
+}
+
+.nav-item .active {
+    background-color: #343a40;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+main .container {
+    margin-top: 1rem;
+}
+
+h2.section-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Utility Classes */
+.text-primary {
+    color: #007bff;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+    color: #fff;
+}
+
+.text-white {
+    color: #ffffff;
+}

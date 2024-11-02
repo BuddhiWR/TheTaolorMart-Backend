@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailoring Management System - The Tailor Mart</title>
 
-    <!-- css link -->
+    <!-- CSS links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- <link rel="stylesheet" href="{{ asset('css/welcome.css') }}"> -->
-    <!-- font link -->
+    <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 </head>
 <body>
-    <!-- bootstrap js link -->
-    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Logo and Header Section -->
     <div class="container my-5">
@@ -28,43 +27,39 @@
         </div>
 
         <!-- Navigation Bar -->
-
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('orders.index') }}">Manage Orders</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('clients.index') }}">Manage Clients</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('tailors.index') }}">Manage Tailors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('inventory.index') }}">Manage Inventory</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('appointments.index') }}">Appointment Schedule</a>
-        </li>
-        
-        
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('orders.index') }}">Manage Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('clients.index') }}">Manage Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('tailors.index') }}">Manage Tailors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('inventory.index') }}">Manage Inventory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('appointments.index') }}">Appointment Schedule</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
         <!-- Main Actions -->
         <div class="d-flex justify-content-center my-4">
@@ -72,18 +67,13 @@
         </div>
 
         <!-- Help and Language Selection -->
-        <divr class="text-center my-4">
+        <div class="text-center my-4">
             <p class="mb-1">Need Help?</p>
             <a href="{{ route('help') }}" class="btn btn-outline-info mx-2">Contact Support</a>
-            <div class="dropdown d-inline">
-                
-                    
-                </div>
-            </div>
         </div>
 
-         <!-- Footer Section -->
-         <footer class="bg-light text-center text-lg-start mt-5">
+        <!-- Footer Section -->
+        <footer class="bg-light text-center text-lg-start mt-5">
             <div class="container p-4">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">

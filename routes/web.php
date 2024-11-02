@@ -59,11 +59,17 @@ Route::get('/privacy', [PageController::class, 'privacy'])->name('privacy');
 Route::view('/privacy', 'pages.privacy')->name('privacy');
 
 Route::get('/order-list', [OrderListController::class, 'index'])->name('order-list.index');
+
 Route::get('/finance', [FinanceController::class, 'index'])->name('finance.index');
+
 Route::get('/reports', [ReportController::class, 'index'])->name('reports.index');
+
 Route::get('/authentication', [AuthenticationController::class, 'index'])->name('authentication.index');
+
 Route::get('/modifications', [ModificationController::class, 'index'])->name('modifications.index');
+
 Route::get('/delivery', [DeliveryController::class, 'index'])->name('delivery.index');
+
 Route::get('/feedback', [FeedbackController::class, 'index'])->name('feedback.index');
 
 
